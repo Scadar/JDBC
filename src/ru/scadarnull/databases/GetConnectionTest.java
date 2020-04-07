@@ -19,8 +19,10 @@ public class GetConnectionTest {
             }
 
             try (Statement st = c.createStatement()) {
-                try (ResultSet rs = st.executeQuery("select Name from city")) {
-                    //code
+                try (ResultSet rs = st.executeQuery("select * from city")) {
+                    while(rs.next()){
+
+                    }
                 }
             }
         }
